@@ -1,7 +1,7 @@
 ### PUG Bootstrap 5 beta code snippets
 
-[ ] Accordion
-[x] Alerts
+- [ ] Accordion
+- [x] Alerts
 [x] Badge
 [x] Breadcrumb
 [x] Buttons
