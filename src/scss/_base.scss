@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  font-size: 1rem;
+  height: 100vh;
+
+  &::after {
+    content: "";
+    background: url(https://images.unsplash.com/photo-1606592641984-c9a1506d0705?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1778&q=80)
+      no-repeat center;
+    background-size: cover;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}

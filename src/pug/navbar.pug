@@ -1,0 +1,301 @@
+doctype html
+html
+  include includes/head
+  body
+
+    .container.m-5
+      .row
+        // Navbar
+        .col-12.mb-5
+          nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            .container-fluid
+              a.navbar-brand(href='#') Navbar
+              button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+              #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                  li.nav-item
+                    a.nav-link.active(aria-current='page' href='#') Home
+                  li.nav-item
+                    a.nav-link(href='#') Link
+                  li.nav-item.dropdown
+                    a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                      | Dropdown
+                    ul.dropdown-menu(aria-labelledby='navbarDropdown')
+                      li
+                        a.dropdown-item(href='#') Action
+                      li
+                        a.dropdown-item(href='#') Another action
+                      li
+                        hr.dropdown-divider
+                      li
+                        a.dropdown-item(href='#') Something else here
+                  li.nav-item
+                    a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+                form.d-flex
+                  input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+                  button.btn.btn-outline-success(type='submit') Search
+
+
+
+        // brand
+        .col-12.mb-5
+          // As a link
+          nav.navbar.navbar-light.bg-light
+            .container-fluid
+              a.navbar-brand(href='#') Navbar
+
+          // As a heading
+          nav.navbar.navbar-light.bg-light
+            .container-fluid
+              span.navbar-brand.mb-0.h1 Navbar
+
+          // Just an image
+          nav.navbar.navbar-light.bg-light
+            .container
+              a.navbar-brand(href='#')
+                img(src='https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg' alt='' width='30' height='24')
+
+          // Image and text
+          nav.navbar.navbar-light.bg-light
+            .container-fluid
+              a.navbar-brand(href='#')
+                img.d-inline-block.align-top(src='https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg' alt='' width='30' height='24')
+                |       Bootstrap
+
+
+
+        // nav
+        .col-12.mb-5
+          nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            .container-fluid
+              a.navbar-brand(href='#') Navbar
+              button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+              #navbarNav.collapse.navbar-collapse
+                ul.navbar-nav
+                  li.nav-item
+                    a.nav-link.active(aria-current='page' href='#') Home
+                  li.nav-item
+                    a.nav-link(href='#') Features
+                  li.nav-item
+                    a.nav-link(href='#') Pricing
+                  li.nav-item
+                    a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+          nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            .container-fluid
+              a.navbar-brand(href='#') Navbar
+              button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+              #navbarNavAltMarkup.collapse.navbar-collapse
+                .navbar-nav
+                  a.nav-link.active(aria-current='page' href='#') Home
+                  a.nav-link(href='#') Features
+                  a.nav-link(href='#') Pricing
+                  a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+
+
+        // nav with dropdown
+        .col-12.mb-5
+          nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            .container-fluid
+              a.navbar-brand(href='#') Navbar
+              button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+              #navbarNavDropdown.collapse.navbar-collapse
+                ul.navbar-nav
+                  li.nav-item
+                    a.nav-link.active(aria-current='page' href='#') Home
+                  li.nav-item
+                    a.nav-link(href='#') Features
+                  li.nav-item
+                    a.nav-link(href='#') Pricing
+                  li.nav-item.dropdown
+                    a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                      | Dropdown link
+                    ul.dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+                      li
+                        a.dropdown-item(href='#') Action
+                      li
+                        a.dropdown-item(href='#') Another action
+                      li
+                        a.dropdown-item(href='#') Something else here
+
+
+
+        // forms
+        .col-12.mb-5
+          nav.navbar.navbar-light.bg-light
+            .container-fluid
+              form.d-flex
+                input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+                button.btn.btn-outline-success(type='submit') Search
+
+          nav.navbar.navbar-light.bg-light
+            .container-fluid
+              a.navbar-brand Navbar
+              form.d-flex
+                input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+                button.btn.btn-outline-success(type='submit') Search
+
+          nav.navbar.navbar-light.bg-light
+            form.container-fluid
+              .input-group
+                span#basic-addon1.input-group-text @
+                input.form-control(type='text' placeholder='Username' aria-label='Username' aria-describedby='basic-addon1')
+
+          nav.navbar.navbar-light.bg-light
+            form.container-fluid.justify-content-start
+              button.btn.btn-outline-success.me-2(type='button') Main button
+              button.btn.btn-sm.btn-outline-secondary(type='button') Smaller button
+
+
+
+        // text
+        .col-12.mb-5
+          nav.navbar.navbar-light.bg-light
+            .container-fluid
+              span.navbar-text
+                | Navbar text with an inline element
+
+          nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            .container-fluid
+              a.navbar-brand(href='#') Navbar w/ text
+              button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarText' aria-controls='navbarText' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+              #navbarText.collapse.navbar-collapse
+                ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                  li.nav-item
+                    a.nav-link.active(aria-current='page' href='#') Home
+                  li.nav-item
+                    a.nav-link(href='#') Features
+                  li.nav-item
+                    a.nav-link(href='#') Pricing
+                span.navbar-text
+                  | Navbar text with an inline element
+
+
+
+        // color schemes
+        .col-12.mb-5
+          nav.navbar.navbar-dark.bg-dark
+            .container-fluid
+              form.d-flex
+                input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+                button.btn.btn-outline-success(type='submit') Search
+
+          nav.navbar.navbar-dark.bg-primary
+            .container-fluid
+              form.d-flex
+                input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+                button.btn.btn-outline-success(type='submit') Search
+
+          nav.navbar.navbar-light(style='background-color: #e3f2fd;')
+            .container-fluid
+              form.d-flex
+                input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+                button.btn.btn-outline-success(type='submit') Search
+
+
+
+        // containers
+        .col-12.mb-5
+          .container
+            nav.navbar.navbar-expand-lg.navbar-light.bg-light
+              .container-fluid
+                a.navbar-brand(href='#') Navbar
+
+
+
+        // placement
+        .col-12.mb-5
+          nav.navbar.navbar-light.bg-light
+            .container-fluid
+              a.navbar-brand(href='#') Default
+
+          nav.navbar.fixed-top.navbar-light.bg-light
+            .container-fluid
+              a.navbar-brand(href='#') Fixed top
+
+          nav.navbar.fixed-bottom.navbar-light.bg-light
+            .container-fluid
+              a.navbar-brand(href='#') Fixed bottom
+
+          nav.navbar.sticky-top.navbar-light.bg-light
+            .container-fluid
+              a.navbar-brand(href='#') Sticky top
+
+
+
+        // toggler
+        .col-12.mb-5
+          nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            .container-fluid
+              button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarTogglerDemo01' aria-controls='navbarTogglerDemo01' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+              #navbarTogglerDemo01.collapse.navbar-collapse
+                a.navbar-brand(href='#') Hidden brand
+                ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                  li.nav-item
+                    a.nav-link.active(aria-current='page' href='#') Home
+                  li.nav-item
+                    a.nav-link(href='#') Link
+                  li.nav-item
+                    a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+                form.d-flex
+                  input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+                  button.btn.btn-outline-success(type='submit') Search
+
+          nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            .container-fluid
+              a.navbar-brand(href='#') Navbar
+              button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarTogglerDemo02' aria-controls='navbarTogglerDemo02' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+              #navbarTogglerDemo02.collapse.navbar-collapse
+                ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                  li.nav-item
+                    a.nav-link.active(aria-current='page' href='#') Home
+                  li.nav-item
+                    a.nav-link(href='#') Link
+                  li.nav-item
+                    a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+                form.d-flex
+                  input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+                  button.btn.btn-outline-success(type='submit') Search
+
+          nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            .container-fluid
+              button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarTogglerDemo03' aria-controls='navbarTogglerDemo03' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+              a.navbar-brand(href='#') Navbar
+              #navbarTogglerDemo03.collapse.navbar-collapse
+                ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                  li.nav-item
+                    a.nav-link.active(aria-current='page' href='#') Home
+                  li.nav-item
+                    a.nav-link(href='#') Link
+                  li.nav-item
+                    a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+                form.d-flex
+                  input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+                  button.btn.btn-outline-success(type='submit') Search
+
+
+
+        // toggler
+        .col-12.mb-5
+          #navbarToggleExternalContent.collapse
+            .bg-dark.p-4
+              h5.text-white.h4 Collapsed content
+              span.text-muted Toggleable via the navbar brand.
+          nav.navbar.navbar-dark.bg-dark
+            .container-fluid
+              button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarToggleExternalContent' aria-controls='navbarToggleExternalContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+
+
+
+  include includes/bottom
+  

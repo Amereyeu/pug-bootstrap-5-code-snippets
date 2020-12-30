@@ -1,0 +1,78 @@
+doctype html
+html
+  include includes/head
+  body
+
+    .container.m-5
+      .row
+        // Buttons
+        .col-12.mb-5
+          button.btn.btn-primary(type='button') Primary
+          button.btn.btn-secondary(type='button') Secondary
+          button.btn.btn-success(type='button') Success
+          button.btn.btn-danger(type='button') Danger
+          button.btn.btn-warning(type='button') Warning
+          button.btn.btn-info(type='button') Info
+          button.btn.btn-light(type='button') Light
+          button.btn.btn-dark(type='button') Dark
+          button.btn.btn-link(type='button') Link
+
+
+        // button tags
+        .col-12.mb-5
+          a.btn.btn-primary(href='#' role='button') Link
+          button.btn.btn-primary(type='submit') Button
+          input.btn.btn-primary(type='button' value='Input')
+          input.btn.btn-primary(type='submit' value='Submit')
+          input.btn.btn-primary(type='reset' value='Reset')
+
+
+        // outline buttons
+        .col-12.mb-5
+          button.btn.btn-outline-primary(type='button') Primary
+          button.btn.btn-outline-secondary(type='button') Secondary
+          button.btn.btn-outline-success(type='button') Success
+          button.btn.btn-outline-danger(type='button') Danger
+          button.btn.btn-outline-warning(type='button') Warning
+          button.btn.btn-outline-info(type='button') Info
+          button.btn.btn-outline-light(type='button') Light
+          button.btn.btn-outline-dark(type='button') Dark
+
+
+        // button sizes
+        .col-12.mb-5
+          button.btn.btn-primary.btn-lg(type='button') Large button
+          button.btn.btn-secondary.btn-lg(type='button') Large button
+          button.btn.btn-primary.btn-sm(type='button') Small button
+          button.btn.btn-secondary.btn-sm(type='button') Small button
+
+
+        // disabled buttons
+        .col-12.mb-5
+          button.btn.btn-lg.btn-primary(type='button' disabled='') Primary button
+          button.btn.btn-secondary.btn-lg(type='button' disabled='') Button
+          a.btn.btn-primary.btn-lg.disabled(href='#' tabindex='-1' role='button' aria-disabled='true') Primary link
+          a.btn.btn-secondary.btn-lg.disabled(href='#' tabindex='-1' role='button' aria-disabled='true') Link
+
+
+        // block buttons
+        .col-12.mb-5
+          .d-grid.gap-2.d-md-block
+            button.btn.btn-primary(type='button') Button
+            button.btn.btn-primary(type='button') Button
+
+
+        // buttons toggle state
+        .col-12.mb-5
+          button.btn.btn-primary(type='button' data-bs-toggle='button' autocomplete='off') Toggle button
+          button.btn.btn-primary.active(type='button' data-bs-toggle='button' autocomplete='off' aria-pressed='true') Active toggle button
+          button.btn.btn-primary(type='button' disabled='' data-bs-toggle='button' autocomplete='off') Disabled toggle button
+          a.btn.btn-primary(href='#' role='button' data-bs-toggle='button') Toggle link
+          a.btn.btn-primary.active(href='#' role='button' data-bs-toggle='button' aria-pressed='true') Active toggle link
+          a.btn.btn-primary.disabled(href='#' tabindex='-1' aria-disabled='true' role='button' data-bs-toggle='button') Disabled toggle link
+
+
+
+
+
+  

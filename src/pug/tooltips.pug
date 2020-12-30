@@ -1,0 +1,32 @@
+doctype html
+html
+  include includes/head
+  body
+
+    .container.m-5
+      .row
+        // Tooltips
+        .col-12.mb-5
+          button.btn.btn-secondary(type='button' data-bs-toggle='tooltip' data-bs-placement='top' title='Tooltip on top')
+            | Tooltip on top
+          button.btn.btn-secondary(type='button' data-bs-toggle='tooltip' data-bs-placement='right' title='Tooltip on right')
+            | Tooltip on right
+          button.btn.btn-secondary(type='button' data-bs-toggle='tooltip' data-bs-placement='bottom' title='Tooltip on bottom')
+            | Tooltip on bottom
+          button.btn.btn-secondary(type='button' data-bs-toggle='tooltip' data-bs-placement='left' title='Tooltip on left')
+            | Tooltip on left
+
+
+        // custom HTML
+        .col-12.mb-5
+          button.btn.btn-secondary(type='button' data-bs-toggle='tooltip' data-bs-html='true' title='<em>Tooltip</em> <u>with</u> <b>HTML</b>')
+            | Tooltip with HTML
+
+
+        // disabled 
+        .col-12.mb-5
+          span.d-inline-block(tabindex='0' data-bs-toggle='tooltip' title='Disabled tooltip')
+            button.btn.btn-primary(style='pointer-events: none;' type='button' disabled='') Disabled button
+
+
+  include includes/bottom

@@ -1,0 +1,23 @@
+doctype html
+html
+  include includes/head
+  body
+
+    .container.m-5
+      .row
+        // Close button
+        .col-12.mb-5
+          button.btn-close(type='button' aria-label='Close')
+
+
+        // disabled
+        .col-12.mb-5
+          button.btn-close(type='button' disabled='' aria-label='Close')
+
+
+        // white variant
+        .col-12.mb-5
+          button.btn-close.btn-close-white(type='button' aria-label='Close')
+          button.btn-close.btn-close-white(type='button' disabled='' aria-label='Close')
+
+

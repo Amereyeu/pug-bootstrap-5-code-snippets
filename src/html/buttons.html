@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pug++</title>
+    <meta name="description" content="description here">
+    <meta name="keyword" content="keywords here">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/nord.min.css">
+    <link rel="stylesheet" href="css/styles.css?acab=1312">
+  </head>
+  <body>
+    <div class="container m-5">
+      <div class="row">
+        <!-- Buttons-->
+        <div class="col-12 mb-5">
+          <button class="btn btn-primary" type="button">Primary</button>
+          <button class="btn btn-secondary" type="button">Secondary</button>
+          <button class="btn btn-success" type="button">Success</button>
+          <button class="btn btn-danger" type="button">Danger</button>
+          <button class="btn btn-warning" type="button">Warning</button>
+          <button class="btn btn-info" type="button">Info</button>
+          <button class="btn btn-light" type="button">Light</button>
+          <button class="btn btn-dark" type="button">Dark</button>
+          <button class="btn btn-link" type="button">Link</button>
+        </div>
+        <!-- button tags-->
+        <div class="col-12 mb-5"><a class="btn btn-primary" href="#" role="button">Link</a>
+          <button class="btn btn-primary" type="submit">Button</button>
+          <input class="btn btn-primary" type="button" value="Input">
+          <input class="btn btn-primary" type="submit" value="Submit">
+          <input class="btn btn-primary" type="reset" value="Reset">
+        </div>
+        <!-- outline buttons-->
+        <div class="col-12 mb-5">
+          <button class="btn btn-outline-primary" type="button">Primary</button>
+          <button class="btn btn-outline-secondary" type="button">Secondary</button>
+          <button class="btn btn-outline-success" type="button">Success</button>
+          <button class="btn btn-outline-danger" type="button">Danger</button>
+          <button class="btn btn-outline-warning" type="button">Warning</button>
+          <button class="btn btn-outline-info" type="button">Info</button>
+          <button class="btn btn-outline-light" type="button">Light</button>
+          <button class="btn btn-outline-dark" type="button">Dark</button>
+        </div>
+        <!-- button sizes-->
+        <div class="col-12 mb-5">
+          <button class="btn btn-primary btn-lg" type="button">Large button</button>
+          <button class="btn btn-secondary btn-lg" type="button">Large button</button>
+          <button class="btn btn-primary btn-sm" type="button">Small button</button>
+          <button class="btn btn-secondary btn-sm" type="button">Small button</button>
+        </div>
+        <!-- disabled buttons-->
+        <div class="col-12 mb-5">
+          <button class="btn btn-lg btn-primary" type="button" disabled="">Primary button</button>
+          <button class="btn btn-secondary btn-lg" type="button" disabled="">Button</button><a class="btn btn-primary btn-lg disabled" href="#" tabindex="-1" role="button" aria-disabled="true">Primary link</a><a class="btn btn-secondary btn-lg disabled" href="#" tabindex="-1" role="button" aria-disabled="true">Link</a>
+        </div>
+        <!-- block buttons-->
+        <div class="col-12 mb-5">
+          <div class="d-grid gap-2 d-md-block">
+            <button class="btn btn-primary" type="button">Button</button>
+            <button class="btn btn-primary" type="button">Button</button>
+          </div>
+        </div>
+        <!-- buttons toggle state-->
+        <div class="col-12 mb-5">
+          <button class="btn btn-primary" type="button" data-bs-toggle="button" autocomplete="off">Toggle button</button>
+          <button class="btn btn-primary active" type="button" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Active toggle button</button>
+          <button class="btn btn-primary" type="button" disabled="" data-bs-toggle="button" autocomplete="off">Disabled toggle button</button><a class="btn btn-primary" href="#" role="button" data-bs-toggle="button">Toggle link</a><a class="btn btn-primary active" href="#" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a><a class="btn btn-primary disabled" href="#" tabindex="-1" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
