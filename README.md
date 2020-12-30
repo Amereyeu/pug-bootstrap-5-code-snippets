@@ -9,7 +9,7 @@
 - [ ] Card
 - [ ] Carousel
 - [x] Close button
-- [ ] Collapse
+- [x] Collapse
 - [ ] Dropdowns
 - [ ] List group
 - [ ] Modal
