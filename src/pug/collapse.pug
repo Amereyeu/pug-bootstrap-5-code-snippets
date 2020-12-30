@@ -1,0 +1,39 @@
+doctype html
+html
+  include includes/head
+  body
+
+    .container.m-5
+      .row
+        // collapse
+        .col-12.mb-5
+          p
+            a.btn.btn-primary(data-bs-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Link with href
+            button.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='#collapseExample' aria-expanded='false' aria-controls='collapseExample')
+              | Button with data-bs-target
+          #collapseExample.collapse
+            .card.card-body
+              | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+
+
+
+        // multiple targets
+        .col-12.mb-5
+          p
+            a.btn.btn-primary(data-bs-toggle='collapse' href='#multiCollapseExample1' role='button' aria-expanded='false' aria-controls='multiCollapseExample1') Toggle first element
+            button.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='#multiCollapseExample2' aria-expanded='false' aria-controls='multiCollapseExample2') Toggle second element
+            button.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='.multi-collapse' aria-expanded='false' aria-controls='multiCollapseExample1 multiCollapseExample2') Toggle both elements
+          .row
+            .col
+              #multiCollapseExample1.collapse.multi-collapse
+                .card.card-body
+                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            .col
+              #multiCollapseExample2.collapse.multi-collapse
+                .card.card-body
+                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+
+
+
+  include includes/bottom
