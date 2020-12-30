@@ -19,6 +19,6 @@
 - [ ] Popovers
 - [ ] Progress
 - [ ] Scrollspy
-- [ ] Spinners
+- [x] Spinners
 - [ ] Toasts
 - [x] Tooltips
