@@ -1,0 +1,126 @@
+doctype html
+html
+  include includes/head
+  body
+
+    .container.m-5
+      .row
+        // Pagination
+        .col-12.mb-5
+          nav(aria-label='Page navigation example')
+            ul.pagination
+              li.page-item
+                a.page-link(href='#') Previous
+              li.page-item
+                a.page-link(href='#') 1
+              li.page-item
+                a.page-link(href='#') 2
+              li.page-item
+                a.page-link(href='#') 3
+              li.page-item
+                a.page-link(href='#') Next
+
+
+
+
+        // with icons
+        .col-12.mb-5
+          nav(aria-label='Page navigation example')
+            ul.pagination
+              li.page-item
+                a.page-link(href='#' aria-label='Previous')
+                  span(aria-hidden='true') «
+              li.page-item
+                a.page-link(href='#') 1
+              li.page-item
+                a.page-link(href='#') 2
+              li.page-item
+                a.page-link(href='#') 3
+              li.page-item
+                a.page-link(href='#' aria-label='Next')
+                  span(aria-hidden='true') »
+
+
+
+        // disabled and active states
+        .col-12.mb-5
+          nav(aria-label='...')
+            ul.pagination
+              li.page-item.disabled
+                a.page-link(href='#' tabindex='-1' aria-disabled='true') Previous
+              li.page-item
+                a.page-link(href='#') 1
+              li.page-item.active(aria-current='page')
+                a.page-link(href='#') 2
+              li.page-item
+                a.page-link(href='#') 3
+              li.page-item
+                a.page-link(href='#') Next
+
+          nav(aria-label='...')
+            ul.pagination
+              li.page-item.disabled
+                span.page-link Previous
+              li.page-item
+                a.page-link(href='#') 1
+              li.page-item.active(aria-current='page')
+                span.page-link 2
+              li.page-item
+                a.page-link(href='#') 3
+              li.page-item
+                a.page-link(href='#') Next
+
+
+
+        // sizing
+        .col-12.mb-5
+          nav(aria-label='...')
+            ul.pagination.pagination-lg
+              li.page-item.active(aria-current='page')
+                span.page-link 1
+              li.page-item
+                a.page-link(href='#') 2
+              li.page-item
+                a.page-link(href='#') 3
+
+          nav(aria-label='...')
+            ul.pagination.pagination-sm
+              li.page-item.active(aria-current='page')
+                span.page-link 1
+              li.page-item
+                a.page-link(href='#') 2
+              li.page-item
+                a.page-link(href='#') 3
+
+
+
+        // aligment
+        .col-12.mb-5
+          nav(aria-label='Page navigation example')
+            ul.pagination.justify-content-center
+              li.page-item.disabled
+                a.page-link(href='#' tabindex='-1' aria-disabled='true') Previous
+              li.page-item
+                a.page-link(href='#') 1
+              li.page-item
+                a.page-link(href='#') 2
+              li.page-item
+                a.page-link(href='#') 3
+              li.page-item
+                a.page-link(href='#') Next
+
+          nav(aria-label='Page navigation example')
+            ul.pagination.justify-content-end
+              li.page-item.disabled
+                a.page-link(href='#' tabindex='-1' aria-disabled='true') Previous
+              li.page-item
+                a.page-link(href='#') 1
+              li.page-item
+                a.page-link(href='#') 2
+              li.page-item
+                a.page-link(href='#') 3
+              li.page-item
+                a.page-link(href='#') Next
+
+
+

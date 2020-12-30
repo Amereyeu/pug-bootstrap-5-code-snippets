@@ -15,7 +15,7 @@
 - [ ] Modal
 - [ ] Navs & tabs
 - [x] Navbar
-- [ ] Pagination
+- [x] Pagination
 - [ ] Popovers
 - [ ] Progress
 - [ ] Scrollspy
