@@ -10,7 +10,7 @@
 - [ ] Carousel
 - [x] Close button
 - [x] Collapse
-- [ ] Dropdowns
+- [x] Dropdowns
 - [ ] List group
 - [ ] Modal
 - [ ] Navs & tabs
