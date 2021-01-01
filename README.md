@@ -17,7 +17,7 @@
 - [x] Navbar
 - [x] Pagination
 - [ ] Popovers
-- [ ] Progress
+- [x] Progress
 - [ ] Scrollspy
 - [x] Spinners
 - [ ] Toasts
