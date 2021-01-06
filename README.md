@@ -5,7 +5,7 @@
 - [x] Badge
 - [x] Breadcrumb
 - [x] Buttons
-- [ ] Button group
+- [x] Button group
 - [ ] Card
 - [ ] Carousel
 - [x] Close button

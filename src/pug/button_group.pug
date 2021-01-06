@@ -1,0 +1,193 @@
+doctype html
+html
+  include includes/head
+  body
+
+    .container.m-5
+      .row
+        // button group
+        .col-12.mb-5
+          .btn-group(role='group' aria-label='Basic example')
+            button.btn.btn-primary(type='button') Left
+            button.btn.btn-primary(type='button') Middle
+            button.btn.btn-primary(type='button') Right
+
+          .btn-group
+            a.btn.btn-primary.active(href='#' aria-current='page') Active link
+            a.btn.btn-primary(href='#') Link
+            a.btn.btn-primary(href='#') Link
+
+
+
+        // mixed styles
+        .col-12.mb-5
+          .btn-group(role='group' aria-label='Basic mixed styles example')
+            button.btn.btn-danger(type='button') Left
+            button.btn.btn-warning(type='button') Middle
+            button.btn.btn-success(type='button') Right
+
+
+
+        // outlined styles
+        .col-12.mb-5
+          .btn-group(role='group' aria-label='Basic outlined example')
+            button.btn.btn-outline-primary(type='button') Left
+            button.btn.btn-outline-primary(type='button') Middle
+            button.btn.btn-outline-primary(type='button') Right
+
+
+
+        // checkbox and radio button groups
+        .col-12.mb-5
+          .btn-group(role='group' aria-label='Basic checkbox toggle button group')
+            input#btncheck1.btn-check(type='checkbox' autocomplete='off')
+            label.btn.btn-outline-primary(for='btncheck1') Checkbox 1
+            input#btncheck2.btn-check(type='checkbox' autocomplete='off')
+            label.btn.btn-outline-primary(for='btncheck2') Checkbox 2
+            input#btncheck3.btn-check(type='checkbox' autocomplete='off')
+            label.btn.btn-outline-primary(for='btncheck3') Checkbox 3
+
+          .btn-group(role='group' aria-label='Basic radio toggle button group')
+            input#btnradio1.btn-check(type='radio' name='btnradio' autocomplete='off' checked='')
+            label.btn.btn-outline-primary(for='btnradio1') Radio 1
+            input#btnradio2.btn-check(type='radio' name='btnradio' autocomplete='off')
+            label.btn.btn-outline-primary(for='btnradio2') Radio 2
+            input#btnradio3.btn-check(type='radio' name='btnradio' autocomplete='off')
+            label.btn.btn-outline-primary(for='btnradio3') Radio 3
+
+
+
+        // button toolbar
+        .col-12.mb-5
+          .btn-toolbar(role='toolbar' aria-label='Toolbar with button groups')
+            .btn-group.me-2(role='group' aria-label='First group')
+              button.btn.btn-primary(type='button') 1
+              button.btn.btn-primary(type='button') 2
+              button.btn.btn-primary(type='button') 3
+              button.btn.btn-primary(type='button') 4
+            .btn-group.me-2(role='group' aria-label='Second group')
+              button.btn.btn-secondary(type='button') 5
+              button.btn.btn-secondary(type='button') 6
+              button.btn.btn-secondary(type='button') 7
+            .btn-group(role='group' aria-label='Third group')
+              button.btn.btn-info(type='button') 8
+
+          .btn-toolbar.mb-3(role='toolbar' aria-label='Toolbar with button groups')
+            .btn-group.me-2(role='group' aria-label='First group')
+              button.btn.btn-outline-secondary(type='button') 1
+              button.btn.btn-outline-secondary(type='button') 2
+              button.btn.btn-outline-secondary(type='button') 3
+              button.btn.btn-outline-secondary(type='button') 4
+            .input-group
+              #btnGroupAddon.input-group-text @
+              input.form-control(type='text' placeholder='Input group example' aria-label='Input group example' aria-describedby='btnGroupAddon')
+          .btn-toolbar.justify-content-between(role='toolbar' aria-label='Toolbar with button groups')
+            .btn-group(role='group' aria-label='First group')
+              button.btn.btn-outline-secondary(type='button') 1
+              button.btn.btn-outline-secondary(type='button') 2
+              button.btn.btn-outline-secondary(type='button') 3
+              button.btn.btn-outline-secondary(type='button') 4
+            .input-group
+              #btnGroupAddon2.input-group-text @
+              input.form-control(type='text' placeholder='Input group example' aria-label='Input group example' aria-describedby='btnGroupAddon2')
+
+
+
+        // sizing
+        .col-12.mb-5
+          .bd-example
+            .btn-group.btn-group-lg(role='group' aria-label='Large button group')
+              button.btn.btn-outline-dark(type='button') Left
+              button.btn.btn-outline-dark(type='button') Middle
+              button.btn.btn-outline-dark(type='button') Right
+            br
+            .btn-group(role='group' aria-label='Default button group')
+              button.btn.btn-outline-dark(type='button') Left
+              button.btn.btn-outline-dark(type='button') Middle
+              button.btn.btn-outline-dark(type='button') Right
+            br
+            .btn-group.btn-group-sm(role='group' aria-label='Small button group')
+              button.btn.btn-outline-dark(type='button') Left
+              button.btn.btn-outline-dark(type='button') Middle
+              button.btn.btn-outline-dark(type='button') Right
+
+
+
+        // nesting
+        .col-12.mb-5
+          .btn-group(role='group' aria-label='Button group with nested dropdown')
+            button.btn.btn-primary(type='button') 1
+            button.btn.btn-primary(type='button') 2
+            .btn-group(role='group')
+              button#btnGroupDrop1.btn.btn-primary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                | Dropdown
+              ul.dropdown-menu(aria-labelledby='btnGroupDrop1')
+                li
+                  a.dropdown-item(href='#') Dropdown link
+                li
+                  a.dropdown-item(href='#') Dropdown link
+
+
+
+        // vertical 
+        .col-12.mb-5
+          .bd-example
+            .btn-group-vertical(role='group' aria-label='Vertical button group')
+              button.btn.btn-dark(type='button') Button
+              button.btn.btn-dark(type='button') Button
+              button.btn.btn-dark(type='button') Button
+              button.btn.btn-dark(type='button') Button
+              button.btn.btn-dark(type='button') Button
+              button.btn.btn-dark(type='button') Button
+
+          .bd-example
+            .btn-group-vertical(role='group' aria-label='Vertical button group')
+              button.btn.btn-primary(type='button') Button
+              button.btn.btn-primary(type='button') Button
+              .btn-group(role='group')
+                button#btnGroupVerticalDrop1.btn.btn-primary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                  | Dropdown
+                ul.dropdown-menu(aria-labelledby='btnGroupVerticalDrop1')
+                  li
+                    a.dropdown-item(href='#') Dropdown link
+                  li
+                    a.dropdown-item(href='#') Dropdown link
+              button.btn.btn-primary(type='button') Button
+              button.btn.btn-primary(type='button') Button
+              .btn-group(role='group')
+                button#btnGroupVerticalDrop2.btn.btn-primary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                  | Dropdown
+                ul.dropdown-menu(aria-labelledby='btnGroupVerticalDrop2')
+                  li
+                    a.dropdown-item(href='#') Dropdown link
+                  li
+                    a.dropdown-item(href='#') Dropdown link
+              .btn-group(role='group')
+                button#btnGroupVerticalDrop3.btn.btn-primary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                  | Dropdown
+                ul.dropdown-menu(aria-labelledby='btnGroupVerticalDrop3')
+                  li
+                    a.dropdown-item(href='#') Dropdown link
+                  li
+                    a.dropdown-item(href='#') Dropdown link
+              .btn-group(role='group')
+                button#btnGroupVerticalDrop4.btn.btn-primary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                  | Dropdown
+                ul.dropdown-menu(aria-labelledby='btnGroupVerticalDrop4')
+                  li
+                    a.dropdown-item(href='#') Dropdown link
+                  li
+                    a.dropdown-item(href='#') Dropdown link
+
+          .bd-example
+            .btn-group-vertical(role='group' aria-label='Vertical radio toggle button group')
+              input#vbtn-radio1.btn-check(type='radio' name='vbtn-radio' autocomplete='off' checked='')
+              label.btn.btn-outline-danger(for='vbtn-radio1') Radio 1
+              input#vbtn-radio2.btn-check(type='radio' name='vbtn-radio' autocomplete='off')
+              label.btn.btn-outline-danger(for='vbtn-radio2') Radio 2
+              input#vbtn-radio3.btn-check(type='radio' name='vbtn-radio' autocomplete='off')
+              label.btn.btn-outline-danger(for='vbtn-radio3') Radio 3
+
+
+
+  include includes/bottom
