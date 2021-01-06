@@ -20,5 +20,5 @@
 - [x] Progress
 - [ ] Scrollspy
 - [x] Spinners
-- [ ] Toasts
+- [x] Toasts
 - [x] Tooltips

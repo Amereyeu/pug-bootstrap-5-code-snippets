@@ -1,0 +1,147 @@
+doctype html
+html
+  include includes/head
+  body
+
+    .container.m-5
+      .row
+        // toast
+        .col-12.mb-5
+          .toast(role='alert' aria-live='assertive' aria-atomic='true')
+            .toast-header
+              img.rounded.me-2(src='...' alt='...')
+              strong.me-auto Bootstrap
+              small 11 mins ago
+              button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+            .toast-body
+              | Hello, world! This is a toast message.
+
+
+
+        // translucent
+        .col-12.mb-5
+          .toast(role='alert' aria-live='assertive' aria-atomic='true')
+            .toast-header
+              img.rounded.me-2(src='...' alt='...')
+              strong.me-auto Bootstrap
+              small.text-muted 11 mins ago
+              button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+            .toast-body
+              | Hello, world! This is a toast message.
+
+
+
+        // stacking
+        .col-12.mb-5
+          .toast-container
+            .toast(role='alert' aria-live='assertive' aria-atomic='true')
+              .toast-header
+                img.rounded.me-2(src='...' alt='...')
+                strong.me-auto Bootstrap
+                small.text-muted just now
+                button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+              .toast-body
+                | See? Just like this.
+            .toast(role='alert' aria-live='assertive' aria-atomic='true')
+              .toast-header
+                img.rounded.me-2(src='...' alt='...')
+                strong.me-auto Bootstrap
+                small.text-muted 2 seconds ago
+                button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+              .toast-body
+                | Heads up, toasts will stack automatically
+
+
+
+        // custom content
+        .col-12.mb-5
+          .toast.d-flex.align-items-center(role='alert' aria-live='assertive' aria-atomic='true')
+            .toast-body
+              | Hello, world! This is a toast message.
+            button.btn-close.ms-auto.me-2(type='button' data-bs-dismiss='toast' aria-label='Close')
+
+          .toast(role='alert' aria-live='assertive' aria-atomic='true')
+            .toast-body
+              | Hello, world! This is a toast message.
+              .mt-2.pt-2.border-top
+                button.btn.btn-primary.btn-sm(type='button') Take action
+                button.btn.btn-secondary.btn-sm(type='button' data-bs-dismiss='toast') Close
+
+
+
+        // color schemes
+        .col-12.mb-5
+          .toast.d-flex.align-items-center.text-white.bg-primary.border-0(role='alert' aria-live='assertive' aria-atomic='true')
+            .toast-body
+              | Hello, world! This is a toast message.
+            button.btn-close.btn-close-white.ms-auto.me-2(type='button' data-bs-dismiss='toast' aria-label='Close')
+
+
+
+        // placement
+        .col-12.mb-5
+          form
+            .form-group.mb-3
+              label(for='selectToastPlacement') Toast placement
+              select#selectToastPlacement.form-select.mt-2
+                option(value='' selected='') Select a position...
+                option(value='top-0 start-0') Top left
+                option(value='top-0 start-50 translate-middle-x') Top center
+                option(value='top-0 end-0') Top right
+                option(value='top-50 start-0 translate-middle-y') Middle left
+                option(value='top-50 start-50 translate-middle') Middle center
+                option(value='top-50 end-0 translate-middle-y') Middle right
+                option(value='bottom-0 start-0') Bottom left
+                option(value='bottom-0 start-50 translate-middle-x') Bottom center
+                option(value='bottom-0 end-0') Bottom right
+          .bg-dark.position-relative.bd-example-toasts(aria-live='polite' aria-atomic='true')
+            #toastPlacement.toast-container.position-absolute.p-3
+              .toast
+                .toast-header
+                  img.rounded.me-2(src='...' alt='...')
+                  strong.me-auto Bootstrap
+                  small 11 mins ago
+                .toast-body
+                  | Hello, world! This is a toast message.
+
+          .position-relative(aria-live='polite' aria-atomic='true')
+            // Position it:
+            // - `.toast-container` for spacing between toasts
+            // - `.position-absolute`, `top-0` & `end-0` to position the toasts in the upper right corner
+            // - `.p-3` to prevent the toasts from sticking to the edge of the container
+            .toast-container.position-absolute.top-0.end-0.p-3
+              // Then put toasts within
+              .toast(role='alert' aria-live='assertive' aria-atomic='true')
+                .toast-header
+                  img.rounded.me-2(src='...' alt='...')
+                  strong.me-auto Bootstrap
+                  small.text-muted just now
+                  button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+                .toast-body
+                  | See? Just like this.
+              .toast(role='alert' aria-live='assertive' aria-atomic='true')
+                .toast-header
+                  img.rounded.me-2(src='...' alt='...')
+                  strong.me-auto Bootstrap
+                  small.text-muted 2 seconds ago
+                  button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+                .toast-body
+                  | Heads up, toasts will stack automatically
+
+          // Flexbox container for aligning the toasts
+          .d-flex.justify-content-center.align-items-center.w-100(aria-live='polite' aria-atomic='true')
+            // Then put toasts within
+            .toast(role='alert' aria-live='assertive' aria-atomic='true')
+              .toast-header
+                img.rounded.me-2(src='...' alt='...')
+                strong.me-auto Bootstrap
+                small 11 mins ago
+                button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+              .toast-body
+                | Hello, world! This is a toast message.
+
+
+
+
+
+
