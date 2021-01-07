@@ -1,6 +1,6 @@
-## PUG Bootstrap 5 beta code snippets
+# PUG Bootstrap 5 beta code snippets
 
-### Components
+## Components
 
 - [ ] Accordion
 - [x] Alerts
@@ -18,7 +18,7 @@
 - [ ] Navs & tabs
 - [x] Navbar
 - [x] Pagination
-- [ ] Popovers
+- [x] Popovers
 - [x] Progress
 - [x] Scrollspy
 - [x] Spinners
