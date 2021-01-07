@@ -20,7 +20,7 @@
 - [x] Pagination
 - [ ] Popovers
 - [x] Progress
-- [ ] Scrollspy
+- [x] Scrollspy
 - [x] Spinners
 - [x] Toasts
 - [x] Tooltips

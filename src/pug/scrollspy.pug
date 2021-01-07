@@ -1,0 +1,94 @@
+doctype html
+html
+  include includes/head
+  body(style="position: relative")
+
+    .container.m-5
+      .row
+        // scrollspy in navbar
+        .col-12.mb-5
+          nav#navbar-example2.navbar.navbar-light.bg-light.px-3
+            a.navbar-brand(href='#') Navbar
+            ul.nav.nav-pills
+              li.nav-item
+                a.nav-link(href='#fat') @fat
+              li.nav-item
+                a.nav-link(href='#mdo') @mdo
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(data-bs-toggle='dropdown' href='#' role='button' aria-expanded='false') Dropdown
+                ul.dropdown-menu.dropdown-menu-end
+                  li
+                    a.dropdown-item(href='#one') one
+                  li
+                    a.dropdown-item(href='#two') two
+                  li
+                    hr.dropdown-divider
+                  li
+                    a.dropdown-item(href='#three') three
+          div(data-bs-spy='scroll' data-bs-target='#navbar-example2' data-bs-offset='0' tabindex='0')
+            h4#fat @fat
+            p ...
+            h4#mdo @mdo
+            p ...
+            h4#one one
+            p ...
+            h4#two two
+            p ...
+            h4#three three
+            p ...
+
+
+
+        // scrollspy with nested nav
+        .col-12.mb-5
+          nav#navbar-example3.navbar.navbar-light.bg-light
+            a.navbar-brand(href='#') Navbar
+            nav.nav.nav-pills.flex-column
+              a.nav-link(href='#item-1') Item 1
+              nav.nav.nav-pills.flex-column
+                a.nav-link.ms-3.my-1(href='#item-1-1') Item 1-1
+                a.nav-link.ms-3.my-1(href='#item-1-2') Item 1-2
+              a.nav-link(href='#item-2') Item 2
+              a.nav-link(href='#item-3') Item 3
+              nav.nav.nav-pills.flex-column
+                a.nav-link.ms-3.my-1(href='#item-3-1') Item 3-1
+                a.nav-link.ms-3.my-1(href='#item-3-2') Item 3-2
+          div(data-bs-spy='scroll' data-bs-target='#navbar-example3' data-bs-offset='0' tabindex='0')
+            h4#item-1 Item 1
+            p ...
+            h5#item-1-1 Item 1-1
+            p ...
+            h5#item-1-2 Item 1-2
+            p ...
+            h4#item-2 Item 2
+            p ...
+            h4#item-3 Item 3
+            p ...
+            h5#item-3-1 Item 3-1
+            p ...
+            h5#item-3-2 Item 3-2
+            p ...
+
+
+
+        // scrollspy with list-group 
+        .col-12.mb-5
+          #list-example.list-group
+            a.list-group-item.list-group-item-action(href='#list-item-1') Item 1
+            a.list-group-item.list-group-item-action(href='#list-item-2') Item 2
+            a.list-group-item.list-group-item-action(href='#list-item-3') Item 3
+            a.list-group-item.list-group-item-action(href='#list-item-4') Item 4
+          .scrollspy-example(data-bs-spy='scroll' data-bs-target='#list-example' data-bs-offset='0' tabindex='0')
+            h4#list-item-1 Item 1
+            p ...
+            h4#list-item-2 Item 2
+            p ...
+            h4#list-item-3 Item 3
+            p ...
+            h4#list-item-4 Item 4
+            p ...
+
+
+
+
+  include includes/bottom
