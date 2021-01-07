@@ -9,11 +9,11 @@
 - [x] Buttons
 - [x] Button group
 - [ ] Card
-- [ ] Carousel
+- [x] Carousel
 - [x] Close button
 - [x] Collapse
 - [x] Dropdowns
-- [ ] List group
+- [x] List group
 - [ ] Modal
 - [ ] Navs & tabs
 - [x] Navbar
