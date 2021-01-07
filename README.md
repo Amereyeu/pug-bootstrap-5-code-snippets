@@ -1,4 +1,6 @@
-### PUG Bootstrap 5 beta code snippets
+## PUG Bootstrap 5 beta code snippets
+
+### Components
 
 - [ ] Accordion
 - [x] Alerts

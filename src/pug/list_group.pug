@@ -1,0 +1,205 @@
+doctype html
+html
+  include includes/head
+  body
+
+    .container.m-5
+      .row
+        // list group
+        .col-12.mb-5
+          ul.list-group
+            li.list-group-item Cras justo odio
+            li.list-group-item Dapibus ac facilisis in
+            li.list-group-item Morbi leo risus
+            li.list-group-item Porta ac consectetur ac
+            li.list-group-item Vestibulum at eros
+
+
+
+        // active item
+        .col-12.mb-5
+          ul.list-group
+            li.list-group-item.active(aria-current='true') Cras justo odio
+            li.list-group-item Dapibus ac facilisis in
+            li.list-group-item Morbi leo risus
+            li.list-group-item Porta ac consectetur ac
+            li.list-group-item Vestibulum at eros
+
+
+
+        // disabled item
+        .col-12.mb-5
+          ul.list-group
+            li.list-group-item.disabled(aria-disabled='true') Cras justo odio
+            li.list-group-item Dapibus ac facilisis in
+            li.list-group-item Morbi leo risus
+            li.list-group-item Porta ac consectetur ac
+            li.list-group-item Vestibulum at eros
+
+
+
+        // lists and buttons
+        .col-12.mb-5
+          .list-group
+            a.list-group-item.list-group-item-action.active(href='#' aria-current='true')
+              | Cras justo odio
+            a.list-group-item.list-group-item-action(href='#') Dapibus ac facilisis in
+            a.list-group-item.list-group-item-action(href='#') Morbi leo risus
+            a.list-group-item.list-group-item-action(href='#') Porta ac consectetur ac
+            a.list-group-item.list-group-item-action.disabled(href='#' tabindex='-1' aria-disabled='true') Vestibulum at eros
+
+          .list-group
+            button.list-group-item.list-group-item-action.active(type='button' aria-current='true')
+              | Cras justo odio
+            button.list-group-item.list-group-item-action(type='button') Dapibus ac facilisis in
+            button.list-group-item.list-group-item-action(type='button') Morbi leo risus
+            button.list-group-item.list-group-item-action(type='button') Porta ac consectetur ac
+            button.list-group-item.list-group-item-action(type='button' disabled='') Vestibulum at eros
+
+
+
+        // flush
+        .col-12.mb-5
+          ul.list-group.list-group-flush
+            li.list-group-item Cras justo odio
+            li.list-group-item Dapibus ac facilisis in
+            li.list-group-item Morbi leo risus
+            li.list-group-item Porta ac consectetur ac
+            li.list-group-item Vestibulum at eros
+
+
+
+        // horizontal
+        .col-12.mb-5
+          ul.list-group.list-group-horizontal
+            li.list-group-item Cras justo odio
+            li.list-group-item Dapibus ac facilisis in
+            li.list-group-item Morbi leo risus
+          ul.list-group.list-group-horizontal-sm
+            li.list-group-item Cras justo odio
+            li.list-group-item Dapibus ac facilisis in
+            li.list-group-item Morbi leo risus
+          ul.list-group.list-group-horizontal-md
+            li.list-group-item Cras justo odio
+            li.list-group-item Dapibus ac facilisis in
+            li.list-group-item Morbi leo risus
+          ul.list-group.list-group-horizontal-lg
+            li.list-group-item Cras justo odio
+            li.list-group-item Dapibus ac facilisis in
+            li.list-group-item Morbi leo risus
+          ul.list-group.list-group-horizontal-xl
+            li.list-group-item Cras justo odio
+            li.list-group-item Dapibus ac facilisis in
+            li.list-group-item Morbi leo risus
+          ul.list-group.list-group-horizontal-xxl
+            li.list-group-item Cras justo odio
+            li.list-group-item Dapibus ac facilisis in
+            li.list-group-item Morbi leo risus
+
+
+
+        // contextual classes
+        .col-12.mb-5
+          ul.list-group
+            li.list-group-item Dapibus ac facilisis in
+            li.list-group-item.list-group-item-primary A simple primary list group item
+            li.list-group-item.list-group-item-secondary A simple secondary list group item
+            li.list-group-item.list-group-item-success A simple success list group item
+            li.list-group-item.list-group-item-danger A simple danger list group item
+            li.list-group-item.list-group-item-warning A simple warning list group item
+            li.list-group-item.list-group-item-info A simple info list group item
+            li.list-group-item.list-group-item-light A simple light list group item
+            li.list-group-item.list-group-item-dark A simple dark list group item
+
+          .list-group
+            a.list-group-item.list-group-item-action(href='#') Dapibus ac facilisis in
+            a.list-group-item.list-group-item-action.list-group-item-primary(href='#') A simple primary list group item
+            a.list-group-item.list-group-item-action.list-group-item-secondary(href='#') A simple secondary list group item
+            a.list-group-item.list-group-item-action.list-group-item-success(href='#') A simple success list group item
+            a.list-group-item.list-group-item-action.list-group-item-danger(href='#') A simple danger list group item
+            a.list-group-item.list-group-item-action.list-group-item-warning(href='#') A simple warning list group item
+            a.list-group-item.list-group-item-action.list-group-item-info(href='#') A simple info list group item
+            a.list-group-item.list-group-item-action.list-group-item-light(href='#') A simple light list group item
+            a.list-group-item.list-group-item-action.list-group-item-dark(href='#') A simple dark list group item
+
+
+
+        // with badges 
+        .col-12.mb-5
+          ul.list-group
+            li.list-group-item.d-flex.justify-content-between.align-items-center
+              | Cras justo odio
+              span.badge.bg-primary.rounded-pill 14
+            li.list-group-item.d-flex.justify-content-between.align-items-center
+              | Dapibus ac facilisis in
+              span.badge.bg-primary.rounded-pill 2
+            li.list-group-item.d-flex.justify-content-between.align-items-center
+              | Morbi leo risus
+              span.badge.bg-primary.rounded-pill 1
+
+
+
+        // custom context
+        .col-12.mb-5
+          .list-group
+            a.list-group-item.list-group-item-action.active(href='#' aria-current='true')
+              .d-flex.w-100.justify-content-between
+                h5.mb-1 List group item heading
+                small 3 days ago
+              p.mb-1
+                | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+              small Donec id elit non mi porta.
+            a.list-group-item.list-group-item-action(href='#')
+              .d-flex.w-100.justify-content-between
+                h5.mb-1 List group item heading
+                small.text-muted 3 days ago
+              p.mb-1
+                | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+              small.text-muted Donec id elit non mi porta.
+            a.list-group-item.list-group-item-action(href='#')
+              .d-flex.w-100.justify-content-between
+                h5.mb-1 List group item heading
+                small.text-muted 3 days ago
+              p.mb-1
+                | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+              small.text-muted Donec id elit non mi porta.
+
+
+
+        // checkboxes and radios
+        .col-12.mb-5
+          ul.list-group
+            li.list-group-item
+              input.form-check-input.me-1(type='checkbox' value='' aria-label='...')
+              |     Cras justo odio
+            li.list-group-item
+              input.form-check-input.me-1(type='checkbox' value='' aria-label='...')
+              |     Dapibus ac facilisis in
+            li.list-group-item
+              input.form-check-input.me-1(type='checkbox' value='' aria-label='...')
+              |     Morbi leo risus
+            li.list-group-item
+              input.form-check-input.me-1(type='checkbox' value='' aria-label='...')
+              |     Porta ac consectetur ac
+            li.list-group-item
+              input.form-check-input.me-1(type='checkbox' value='' aria-label='...')
+              |     Vestibulum at eros
+
+          .list-group
+            label.list-group-item
+              input.form-check-input.me-1(type='checkbox' value='')
+              |     Cras justo odio
+            label.list-group-item
+              input.form-check-input.me-1(type='checkbox' value='')
+              |     Dapibus ac facilisis in
+            label.list-group-item
+              input.form-check-input.me-1(type='checkbox' value='')
+              |     Morbi leo risus
+            label.list-group-item
+              input.form-check-input.me-1(type='checkbox' value='')
+              |     Porta ac consectetur ac
+            label.list-group-item
+              input.form-check-input.me-1(type='checkbox' value='')
+              |     Vestibulum at eros
+
+

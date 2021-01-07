@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pug++</title>
+    <meta name="description" content="description here">
+    <meta name="keyword" content="keywords here">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/nord.min.css">
+    <link rel="stylesheet" href="css/styles.css?acab=1312">
+  </head>
+  <body>
+    <div class="container m-5">
+      <div class="row">
+        <!-- list group-->
+        <div class="col-12 mb-5">
+          <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+        <!-- active item-->
+        <div class="col-12 mb-5">
+          <ul class="list-group">
+            <li class="list-group-item active" aria-current="true">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+        <!-- disabled item-->
+        <div class="col-12 mb-5">
+          <ul class="list-group">
+            <li class="list-group-item disabled" aria-disabled="true">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+        <!-- lists and buttons-->
+        <div class="col-12 mb-5">
+          <div class="list-group"><a class="list-group-item list-group-item-action active" href="#" aria-current="true">Cras justo odio</a><a class="list-group-item list-group-item-action" href="#">Dapibus ac facilisis in</a><a class="list-group-item list-group-item-action" href="#">Morbi leo risus</a><a class="list-group-item list-group-item-action" href="#">Porta ac consectetur ac</a><a class="list-group-item list-group-item-action disabled" href="#" tabindex="-1" aria-disabled="true">Vestibulum at eros</a></div>
+          <div class="list-group">
+            <button class="list-group-item list-group-item-action active" type="button" aria-current="true">Cras justo odio</button>
+            <button class="list-group-item list-group-item-action" type="button">Dapibus ac facilisis in</button>
+            <button class="list-group-item list-group-item-action" type="button">Morbi leo risus</button>
+            <button class="list-group-item list-group-item-action" type="button">Porta ac consectetur ac</button>
+            <button class="list-group-item list-group-item-action" type="button" disabled="">Vestibulum at eros</button>
+          </div>
+        </div>
+        <!-- flush-->
+        <div class="col-12 mb-5">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+        <!-- horizontal-->
+        <div class="col-12 mb-5">
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+          </ul>
+          <ul class="list-group list-group-horizontal-sm">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+          </ul>
+          <ul class="list-group list-group-horizontal-md">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+          </ul>
+          <ul class="list-group list-group-horizontal-lg">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+          </ul>
+          <ul class="list-group list-group-horizontal-xl">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+          </ul>
+          <ul class="list-group list-group-horizontal-xxl">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+          </ul>
+        </div>
+        <!-- contextual classes-->
+        <div class="col-12 mb-5">
+          <ul class="list-group">
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+            <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+            <li class="list-group-item list-group-item-success">A simple success list group item</li>
+            <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+            <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+            <li class="list-group-item list-group-item-info">A simple info list group item</li>
+            <li class="list-group-item list-group-item-light">A simple light list group item</li>
+            <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+          </ul>
+          <div class="list-group"><a class="list-group-item list-group-item-action" href="#">Dapibus ac facilisis in</a><a class="list-group-item list-group-item-action list-group-item-primary" href="#">A simple primary list group item</a><a class="list-group-item list-group-item-action list-group-item-secondary" href="#">A simple secondary list group item</a><a class="list-group-item list-group-item-action list-group-item-success" href="#">A simple success list group item</a><a class="list-group-item list-group-item-action list-group-item-danger" href="#">A simple danger list group item</a><a class="list-group-item list-group-item-action list-group-item-warning" href="#">A simple warning list group item</a><a class="list-group-item list-group-item-action list-group-item-info" href="#">A simple info list group item</a><a class="list-group-item list-group-item-action list-group-item-light" href="#">A simple light list group item</a><a class="list-group-item list-group-item-action list-group-item-dark" href="#">A simple dark list group item</a></div>
+        </div>
+        <!-- with badges -->
+        <div class="col-12 mb-5">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">Cras justo odio<span class="badge bg-primary rounded-pill">14</span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">Dapibus ac facilisis in<span class="badge bg-primary rounded-pill">2</span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">Morbi leo risus<span class="badge bg-primary rounded-pill">1</span></li>
+          </ul>
+        </div>
+        <!-- custom context-->
+        <div class="col-12 mb-5">
+          <div class="list-group"><a class="list-group-item list-group-item-action active" href="#" aria-current="true">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">List group item heading</h5><small>3 days ago</small>
+              </div>
+              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small>Donec id elit non mi porta.</small></a><a class="list-group-item list-group-item-action" href="#">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">List group item heading</h5><small class="text-muted">3 days ago</small>
+              </div>
+              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-muted">Donec id elit non mi porta.</small></a><a class="list-group-item list-group-item-action" href="#">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">List group item heading</h5><small class="text-muted">3 days ago</small>
+              </div>
+              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-muted">Donec id elit non mi porta.</small></a></div>
+        </div>
+        <!-- checkboxes and radios-->
+        <div class="col-12 mb-5">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">    Cras justo odio
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">    Dapibus ac facilisis in
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">    Morbi leo risus
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">    Porta ac consectetur ac
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">    Vestibulum at eros
+            </li>
+          </ul>
+          <div class="list-group">
+            <label class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="">    Cras justo odio
+            </label>
+            <label class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="">    Dapibus ac facilisis in
+            </label>
+            <label class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="">    Morbi leo risus
+            </label>
+            <label class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="">    Porta ac consectetur ac
+            </label>
+            <label class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="">    Vestibulum at eros
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
