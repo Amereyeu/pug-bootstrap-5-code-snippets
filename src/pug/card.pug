@@ -1,0 +1,563 @@
+doctype html
+html
+  include includes/head
+  body
+
+    .container.m-5
+      .row
+        // card
+        .col-12.mb-5
+          .card(style='width: 18rem;')
+            img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+            .card-body
+              h5.card-title Card title
+              p.card-text
+                | Some quick example text to build on the card title and make up the bulk of the card's content.
+              a.btn.btn-primary(href='#') Go somewhere
+
+
+
+        // titles, text, and links
+        .col-12.mb-5
+          .card(style='width: 18rem;')
+            .card-body
+              h5.card-title Card title
+              h6.card-subtitle.mb-2.text-muted Card subtitle
+              p.card-text
+                | Some quick example text to build on the card title and make up the bulk of the card's content.
+              a.card-link(href='#') Card link
+              a.card-link(href='#') Another link
+
+
+
+        // images
+        .col-12.mb-5
+          .card(style='width: 18rem;')
+            img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+            .card-body
+              p.card-text
+                | Some quick example text to build on the card title and make up the bulk of the card's content.
+
+
+
+        // list groups
+        .col-12.mb-5
+          .card(style='width: 18rem;')
+            ul.list-group.list-group-flush
+              li.list-group-item Cras justo odio
+              li.list-group-item Dapibus ac facilisis in
+              li.list-group-item Vestibulum at eros
+
+          .card(style='width: 18rem;')
+            .card-header
+              | Featured
+            ul.list-group.list-group-flush
+              li.list-group-item Cras justo odio
+              li.list-group-item Dapibus ac facilisis in
+              li.list-group-item Vestibulum at eros
+
+          .card(style='width: 18rem;')
+            ul.list-group.list-group-flush
+              li.list-group-item Cras justo odio
+              li.list-group-item Dapibus ac facilisis in
+              li.list-group-item Vestibulum at eros
+            .card-footer
+              | Card footer
+
+
+
+        // all
+        .col-12.mb-5
+          .card(style='width: 18rem;')
+            img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+            .card-body
+              h5.card-title Card title
+              p.card-text
+                | Some quick example text to build on the card title and make up the bulk of the card's content.
+            ul.list-group.list-group-flush
+              li.list-group-item Cras justo odio
+              li.list-group-item Dapibus ac facilisis in
+              li.list-group-item Vestibulum at eros
+            .card-body
+              a.card-link(href='#') Card link
+              a.card-link(href='#') Another link
+
+
+
+        // header and footer
+        .col-12.mb-5
+          .card
+            .card-header
+              | Featured
+            .card-body
+              h5.card-title Special title treatment
+              p.card-text With supporting text below as a natural lead-in to additional content.
+              a.btn.btn-primary(href='#') Go somewhere
+
+          .card
+            h5.card-header Featured
+            .card-body
+              h5.card-title Special title treatment
+              p.card-text With supporting text below as a natural lead-in to additional content.
+              a.btn.btn-primary(href='#') Go somewhere
+
+          .card
+            .card-header
+              | Quote
+            .card-body
+              blockquote.blockquote.mb-0
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                footer.blockquote-footer
+                  | Someone famous in 
+                  cite(title='Source Title') Source Title
+
+          .card.text-center
+            .card-header
+              | Featured
+            .card-body
+              h5.card-title Special title treatment
+              p.card-text With supporting text below as a natural lead-in to additional content.
+              a.btn.btn-primary(href='#') Go somewhere
+            .card-footer.text-muted
+              | 2 days ago
+
+
+
+          // sizing
+          .col-12.mb-5
+            .row
+              .col-sm-6
+                .card
+                  .card-body
+                    h5.card-title Special title treatment
+                    p.card-text With supporting text below as a natural lead-in to additional content.
+                    a.btn.btn-primary(href='#') Go somewhere
+              .col-sm-6
+                .card
+                  .card-body
+                    h5.card-title Special title treatment
+                    p.card-text With supporting text below as a natural lead-in to additional content.
+                    a.btn.btn-primary(href='#') Go somewhere
+
+
+
+          // sizing utilities
+          .col-12.mb-5
+            .card.w-75
+              .card-body
+                h5.card-title Card title
+                p.card-text With supporting text below as a natural lead-in to additional content.
+                a.btn.btn-primary(href='#') Button
+            .card.w-50
+              .card-body
+                h5.card-title Card title
+                p.card-text With supporting text below as a natural lead-in to additional content.
+                a.btn.btn-primary(href='#') Button
+
+
+
+          // custom css
+          .col-12.mb-5          
+            .card(style='width: 18rem;')
+              .card-body
+                h5.card-title Special title treatment
+                p.card-text With supporting text below as a natural lead-in to additional content.
+                a.btn.btn-primary(href='#') Go somewhere
+
+
+
+          // text alignment
+          .col-12.mb-5          
+            .card(style='width: 18rem;')
+              .card-body
+                h5.card-title Special title treatment
+                p.card-text With supporting text below as a natural lead-in to additional content.
+                a.btn.btn-primary(href='#') Go somewhere
+            .card.text-center(style='width: 18rem;')
+              .card-body
+                h5.card-title Special title treatment
+                p.card-text With supporting text below as a natural lead-in to additional content.
+                a.btn.btn-primary(href='#') Go somewhere
+            .card.text-end(style='width: 18rem;')
+              .card-body
+                h5.card-title Special title treatment
+                p.card-text With supporting text below as a natural lead-in to additional content.
+                a.btn.btn-primary(href='#') Go somewhere
+
+
+
+          // navigation
+          .col-12.mb-5          
+            .card.text-center
+              .card-header
+                ul.nav.nav-tabs.card-header-tabs
+                  li.nav-item
+                    a.nav-link.active(aria-current='true' href='#') Active
+                  li.nav-item
+                    a.nav-link(href='#') Link
+                  li.nav-item
+                    a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+              .card-body
+                h5.card-title Special title treatment
+                p.card-text With supporting text below as a natural lead-in to additional content.
+                a.btn.btn-primary(href='#') Go somewhere
+
+            .card.text-center
+              .card-header
+                ul.nav.nav-pills.card-header-pills
+                  li.nav-item
+                    a.nav-link.active(href='#') Active
+                  li.nav-item
+                    a.nav-link(href='#') Link
+                  li.nav-item
+                    a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+              .card-body
+                h5.card-title Special title treatment
+                p.card-text With supporting text below as a natural lead-in to additional content.
+                a.btn.btn-primary(href='#') Go somewhere
+
+
+
+          // images
+          .col-12.mb-5          
+            .card.mb-3
+              img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+              .card-body
+                h5.card-title Card title
+                p.card-text
+                  | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                p.card-text
+                  small.text-muted Last updated 3 mins ago
+            .card
+              .card-body
+                h5.card-title Card title
+                p.card-text
+                  | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                p.card-text
+                  small.text-muted Last updated 3 mins ago
+              img.card-img-bottom(src="https://via.placeholder.com/120" alt="img")
+
+
+
+          // image overlays
+          .col-12.mb-5          
+            .card.bg-dark.text-white
+              img.card-img(src="https://via.placeholder.com/120" alt="img")
+              .card-img-overlay
+                h5.card-title Card title
+                p.card-text
+                  | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                p.card-text Last updated 3 mins ago
+
+
+          // image overlays
+          .col-12.mb-5          
+            .card.bg-dark.text-white
+              img.card-img(src="https://via.placeholder.com/120" alt="img")
+              .card-img-overlay
+                h5.card-title Card title
+                p.card-text
+                  | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                p.card-text Last updated 3 mins ago
+
+
+
+          // horizontal
+          .col-12.mb-5          
+            .card.mb-3(style='max-width: 540px;')
+              .row.g-0
+                .col-md-4
+                  img(src="https://via.placeholder.com/120" alt="img")
+                .col-md-8
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text
+                      | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                    p.card-text
+                      small.text-muted Last updated 3 mins ago
+
+
+
+          // background colors
+          .col-12.mb-5          
+            .card.text-white.bg-primary.mb-3(style='max-width: 18rem;')
+              .card-header Header
+              .card-body
+                h5.card-title Primary card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.text-white.bg-secondary.mb-3(style='max-width: 18rem;')
+              .card-header Header
+              .card-body
+                h5.card-title Secondary card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.text-white.bg-success.mb-3(style='max-width: 18rem;')
+              .card-header Header
+              .card-body
+                h5.card-title Success card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.text-white.bg-danger.mb-3(style='max-width: 18rem;')
+              .card-header Header
+              .card-body
+                h5.card-title Danger card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.text-dark.bg-warning.mb-3(style='max-width: 18rem;')
+              .card-header Header
+              .card-body
+                h5.card-title Warning card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.text-dark.bg-info.mb-3(style='max-width: 18rem;')
+              .card-header Header
+              .card-body
+                h5.card-title Info card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.text-dark.bg-light.mb-3(style='max-width: 18rem;')
+              .card-header Header
+              .card-body
+                h5.card-title Light card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.text-white.bg-dark.mb-3(style='max-width: 18rem;')
+              .card-header Header
+              .card-body
+                h5.card-title Dark card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the card's content.
+
+
+
+          // borders
+          .col-12.mb-5          
+            .card.border-primary.mb-3(style='max-width: 18rem;')
+              .card-header Header
+              .card-body.text-primary
+                h5.card-title Primary card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.border-secondary.mb-3(style='max-width: 18rem;')
+              .card-header Header
+              .card-body.text-secondary
+                h5.card-title Secondary card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.border-success.mb-3(style='max-width: 18rem;')
+              .card-header Header
+              .card-body.text-success
+                h5.card-title Success card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.border-danger.mb-3(style='max-width: 18rem;')
+              .card-header Header
+              .card-body.text-danger
+                h5.card-title Danger card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.border-warning.mb-3(style='max-width: 18rem;')
+              .card-header Header
+              .card-body
+                h5.card-title Warning card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.border-info.mb-3(style='max-width: 18rem;')
+              .card-header Header
+              .card-body
+                h5.card-title Info card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.border-light.mb-3(style='max-width: 18rem;')
+              .card-header Header
+              .card-body
+                h5.card-title Light card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.border-dark.mb-3(style='max-width: 18rem;')
+              .card-header Header
+              .card-body.text-dark
+                h5.card-title Dark card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the card's content.
+
+
+
+          // card groups
+          .col-12.mb-5  
+            .card-group
+              .card
+                img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                .card-body
+                  h5.card-title Card title
+                  p.card-text
+                    | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                  p.card-text
+                    small.text-muted Last updated 3 mins ago
+              .card
+                img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                .card-body
+                  h5.card-title Card title
+                  p.card-text This card has supporting text below as a natural lead-in to additional content.
+                  p.card-text
+                    small.text-muted Last updated 3 mins ago
+              .card
+                img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                .card-body
+                  h5.card-title Card title
+                  p.card-text
+                    | This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+                  p.card-text
+                    small.text-muted Last updated 3 mins ago
+
+            .card-group
+              .card
+                img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                .card-body
+                  h5.card-title Card title
+                  p.card-text
+                    | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                .card-footer
+                  small.text-muted Last updated 3 mins ago
+              .card
+                img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                .card-body
+                  h5.card-title Card title
+                  p.card-text This card has supporting text below as a natural lead-in to additional content.
+                .card-footer
+                  small.text-muted Last updated 3 mins ago
+              .card
+                img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                .card-body
+                  h5.card-title Card title
+                  p.card-text
+                    | This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+                .card-footer
+                  small.text-muted Last updated 3 mins ago
+
+
+
+          // grid cards
+          .col-12.mb-5  
+            .row.row-cols-1.row-cols-md-2.g-4
+              .col
+                .card
+                  img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text
+                      | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+              .col
+                .card
+                  img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text
+                      | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+              .col
+                .card
+                  img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text
+                      | This is a longer card with supporting text below as a natural lead-in to additional content.
+              .col
+                .card
+                  img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text
+                      | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+
+            .row.row-cols-1.row-cols-md-3.g-4
+              .col
+                .card
+                  img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text
+                      | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+              .col
+                .card
+                  img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text
+                      | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+              .col
+                .card
+                  img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text
+                      | This is a longer card with supporting text below as a natural lead-in to additional content.
+              .col
+                .card
+                  img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text
+                      | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+
+            .row.row-cols-1.row-cols-md-3.g-4
+              .col
+                .card.h-100
+                  img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text
+                      | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+              .col
+                .card.h-100
+                  img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text This is a short card.
+              .col
+                .card.h-100
+                  img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text
+                      | This is a longer card with supporting text below as a natural lead-in to additional content.
+              .col
+                .card.h-100
+                  img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text
+                      | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+
+            .row.row-cols-1.row-cols-md-3.g-4
+              .col
+                .card.h-100
+                  img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text
+                      | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                  .card-footer
+                    small.text-muted Last updated 3 mins ago
+              .col
+                .card.h-100
+                  img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text This card has supporting text below as a natural lead-in to additional content.
+                  .card-footer
+                    small.text-muted Last updated 3 mins ago
+              .col
+                .card.h-100
+                  img.card-img-top(src="https://via.placeholder.com/120" alt="img")
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text
+                      | This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+                  .card-footer
+                    small.text-muted Last updated 3 mins ago
+
+
+
+  include includes/bottom

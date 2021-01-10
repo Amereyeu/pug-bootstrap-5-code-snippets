@@ -8,7 +8,7 @@
 - [x] Breadcrumb
 - [x] Buttons
 - [x] Button group
-- [ ] Card
+- [x] Card
 - [x] Carousel
 - [x] Close button
 - [x] Collapse
