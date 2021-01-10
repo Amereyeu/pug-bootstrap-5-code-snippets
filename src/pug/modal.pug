@@ -1,0 +1,141 @@
+doctype html
+html
+  include includes/head
+  body
+
+    .container.m-5
+      .row
+        // modal
+        .col-12.mb-5
+          .modal(tabindex='-1')
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  h5.modal-title Modal title
+                  button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                  p Modal body text goes here.
+                .modal-footer
+                  button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                  button.btn.btn-primary(type='button') Save changes
+
+
+
+        // static backdrop
+        .col-12.mb-5
+          // Button trigger modal
+          button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#staticBackdrop')
+            | Launch static backdrop modal
+          // Modal
+          #staticBackdrop.modal.fade(data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true')
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  h5#staticBackdropLabel.modal-title Modal title
+                  button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                  | ...
+                .modal-footer
+                  button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                  button.btn.btn-primary(type='button') Understood
+
+
+
+        // scrolling long content
+        .col-12.mb-5
+          // Scrollable modal
+          .modal-dialog.modal-dialog-scrollable
+            | ...
+
+
+
+        // vertically centered
+        .col-12.mb-5
+          // Vertically centered modal
+          .modal-dialog.modal-dialog-centered
+            | ...
+          // Vertically centered scrollable modal
+          .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+            | ...
+
+
+
+        // tooltips and popovers
+        .col-12.mb-5
+          .modal-body
+            h5 Popover in a modal
+            p
+              | This 
+              a.btn.btn-secondary.popover-test(href='#' role='button' title='Popover title' data-bs-content='Popover body content is set in this attribute.') button
+              |  triggers a popover on click.
+            hr
+            h5 Tooltips in a modal
+            p
+              a.tooltip-test(href='#' title='Tooltip') This link
+              |  and 
+              a.tooltip-test(href='#' title='Tooltip') that link
+              |  have tooltips on hover.
+
+
+
+        // using the grid
+        .col-12.mb-5
+          button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#gridSystemModal')
+            | Launch demo modal
+          #gridSystemModal.modal.fade(tabindex="-1" )
+            .modal-dialog
+              .modal-content
+                .modal-body
+                  .container-fluid
+                    .row
+                      .col-md-4 .col-md-4
+                      .col-md-4.ms-auto .col-md-4 .ms-auto
+                    .row
+                      .col-md-3.ms-auto .col-md-3 .ms-auto
+                      .col-md-2.ms-auto .col-md-2 .ms-auto
+                    .row
+                      .col-md-6.ms-auto .col-md-6 .ms-auto
+                    .row
+                      .col-sm-9
+                        | Level 1: .col-sm-9
+                        .row
+                          .col-8.col-sm-6
+                            | Level 2: .col-8 .col-sm-6
+                          .col-4.col-sm-6
+                            | Level 2: .col-4 .col-sm-6
+
+
+
+          // vertical modal content
+          .col-12.mb-5
+            button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal' data-bs-whatever='@mdo') Open modal for @mdo
+            button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal' data-bs-whatever='@fat') Open modal for @fat
+            button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal' data-bs-whatever='@getbootstrap') Open modal for @getbootstrap
+            #exampleModal.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+              .modal-dialog
+                .modal-content
+                  .modal-header
+                    h5#exampleModalLabel.modal-title New message
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                  .modal-body
+                    form
+                      .mb-3
+                        label.col-form-label(for='recipient-name') Recipient:
+                        input#recipient-name.form-control(type='text')
+                      .mb-3
+                        label.col-form-label(for='message-text') Message:
+                        textarea#message-text.form-control
+                  .modal-footer
+                    button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                    button.btn.btn-primary(type='button') Send message
+
+
+
+          // fulscreen modal
+          .col-12.mb-5
+            .modal-dialog.modal-fullscreen-sm-down
+              | ...
+
+
+
+  include includes/bottom

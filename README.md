@@ -14,7 +14,7 @@
 - [x] Collapse
 - [x] Dropdowns
 - [x] List group
-- [ ] Modal
+- [x] Modal
 - [x] Navs & tabs
 - [x] Navbar
 - [x] Pagination
