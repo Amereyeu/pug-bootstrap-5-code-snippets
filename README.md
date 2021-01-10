@@ -2,7 +2,7 @@
 
 ## Components
 
-- [ ] Accordion
+- [x] Accordion
 - [x] Alerts
 - [x] Badge
 - [x] Breadcrumb
