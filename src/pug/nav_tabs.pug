@@ -1,0 +1,196 @@
+doctype html
+html
+  include includes/head
+  body
+
+    .container.m-5
+      .row
+        // nav
+        .col-12.mb-5
+          ul.nav
+            li.nav-item
+              a.nav-link.active(aria-current='page' href='#') Active
+            li.nav-item
+              a.nav-link(href='#') Link
+            li.nav-item
+              a.nav-link(href='#') Link
+            li.nav-item
+              a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+          nav.nav
+            a.nav-link.active(aria-current='page' href='#') Active
+            a.nav-link(href='#') Link
+            a.nav-link(href='#') Link
+            a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+
+
+        // horizontal alignment
+        .col-12.mb-5
+          ul.nav.justify-content-center
+            li.nav-item
+              a.nav-link.active(aria-current='page' href='#') Active
+            li.nav-item
+              a.nav-link(href='#') Link
+            li.nav-item
+              a.nav-link(href='#') Link
+            li.nav-item
+              a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+          ul.nav.justify-content-end
+            li.nav-item
+              a.nav-link.active(aria-current='page' href='#') Active
+            li.nav-item
+              a.nav-link(href='#') Link
+            li.nav-item
+              a.nav-link(href='#') Link
+            li.nav-item
+              a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+
+
+        // vertical alignment
+        .col-12.mb-5
+          ul.nav.flex-column
+            li.nav-item
+              a.nav-link.active(aria-current='page' href='#') Active
+            li.nav-item
+              a.nav-link(href='#') Link
+            li.nav-item
+              a.nav-link(href='#') Link
+            li.nav-item
+              a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+          nav.nav.flex-column
+            a.nav-link.active(aria-current='page' href='#') Active
+            a.nav-link(href='#') Link
+            a.nav-link(href='#') Link
+            a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+
+
+        // tabs
+        .col-12.mb-5
+          ul.nav.nav-tabs
+            li.nav-item
+              a.nav-link.active(aria-current='page' href='#') Active
+            li.nav-item
+              a.nav-link(href='#') Link
+            li.nav-item
+              a.nav-link(href='#') Link
+            li.nav-item
+              a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+
+
+        // pills
+        .col-12.mb-5
+          ul.nav.nav-pills
+            li.nav-item
+              a.nav-link.active(aria-current='page' href='#') Active
+            li.nav-item
+              a.nav-link(href='#') Link
+            li.nav-item
+              a.nav-link(href='#') Link
+            li.nav-item
+              a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+
+
+        // fill and justify
+        .col-12.mb-5
+          ul.nav.nav-pills.nav-fill
+            li.nav-item
+              a.nav-link.active(aria-current='page' href='#') Active
+            li.nav-item
+              a.nav-link(href='#') Much longer nav link
+            li.nav-item
+              a.nav-link(href='#') Link
+            li.nav-item
+              a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+          nav.nav.nav-pills.nav-fill
+            a.nav-link.active(aria-current='page' href='#') Active
+            a.nav-link(href='#') Much longer nav link
+            a.nav-link(href='#') Link
+            a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+          ul.nav.nav-pills.nav-justified
+            li.nav-item
+              a.nav-link.active(aria-current='page' href='#') Active
+            li.nav-item
+              a.nav-link(href='#') Much longer nav link
+            li.nav-item
+              a.nav-link(href='#') Link
+            li.nav-item
+              a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+          nav.nav.nav-pills.nav-justified
+            a.nav-link.active(aria-current='page' href='#') Active
+            a.nav-link(href='#') Much longer nav link
+            a.nav-link(href='#') Link
+            a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+
+
+          // flex utilities
+          .col-12.mb-5
+            nav.nav.nav-pills.flex-column.flex-sm-row
+              a.flex-sm-fill.text-sm-center.nav-link.active(aria-current='page' href='#') Active
+              a.flex-sm-fill.text-sm-center.nav-link(href='#') Longer nav link
+              a.flex-sm-fill.text-sm-center.nav-link(href='#') Link
+              a.flex-sm-fill.text-sm-center.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+
+
+          // tabs with dropdowns
+          .col-12.mb-5
+            ul.nav.nav-tabs
+              li.nav-item
+                a.nav-link.active(aria-current='page' href='#') Active
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(data-bs-toggle='dropdown' href='#' role='button' aria-expanded='false') Dropdown
+                ul.dropdown-menu
+                  li
+                    a.dropdown-item(href='#') Action
+                  li
+                    a.dropdown-item(href='#') Another action
+                  li
+                    a.dropdown-item(href='#') Something else here
+                  li
+                    hr.dropdown-divider
+                  li
+                    a.dropdown-item(href='#') Separated link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+
+
+          // pills with dropdowns
+          .col-12.mb-5          
+            ul.nav.nav-pills
+              li.nav-item
+                a.nav-link.active(aria-current='page' href='#') Active
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(data-bs-toggle='dropdown' href='#' role='button' aria-expanded='false') Dropdown
+                ul.dropdown-menu
+                  li
+                    a.dropdown-item(href='#') Action
+                  li
+                    a.dropdown-item(href='#') Another action
+                  li
+                    a.dropdown-item(href='#') Something else here
+                  li
+                    hr.dropdown-divider
+                  li
+                    a.dropdown-item(href='#') Separated link
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item
+                a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+
+
+  include includes/bottom

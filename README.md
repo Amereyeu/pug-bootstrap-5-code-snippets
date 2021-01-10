@@ -15,7 +15,7 @@
 - [x] Dropdowns
 - [x] List group
 - [ ] Modal
-- [ ] Navs & tabs
+- [x] Navs & tabs
 - [x] Navbar
 - [x] Pagination
 - [x] Popovers
